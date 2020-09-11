@@ -3,10 +3,10 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
+          <ion-list-header>Menu</ion-list-header>
           <ion-note>hi@ionicframework.com</ion-note>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let item of menuApp; let i = index">
+          <ion-menu-toggle auto-hide="false" *ngFor="let item of menuAdm; let i = index">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[item.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
               <ion-icon slot="start" [ios]="item.icon + '-outline'" [md]="item.icon + '-sharp'"></ion-icon>
               <ion-label>{{ item.title }}</ion-label>

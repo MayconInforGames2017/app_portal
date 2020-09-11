@@ -11,13 +11,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
-  public appPages = [
+  public menuAdm = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail'
+      title: 'Home',
+      url: '/folder',
+      icon: 'home'
     },
-    
+      
+    {
+      title: 'Matriculas',
+      url: '/matriculas',
+      icon: 'home'
+    },
   ];
   
   constructor(
