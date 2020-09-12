@@ -4,12 +4,22 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Lista de Matrículas</ion-title>
-    <ion-buttons slot="primary">
-      <ion-button>Novo
-        <ion-icon slot="end" name="add"></ion-icon>
-      </ion-button> 
-    </ion-buttons>
+    
   </ion-toolbar>
+
+  <ion-toolbar color="secondary">
+    <ion-row>
+    <ion-input placeholder="Buscar" [(ngModel)]="curso" type="search" (ionChange)="carregar()"></ion-input>
+  
+    <ion-buttons (click)="carregar()">
+      <ion-button>
+        <ion-icon slot="end" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-row>
+    
+  </ion-toolbar>
+
 </ion-header>
 
 <ion-content>

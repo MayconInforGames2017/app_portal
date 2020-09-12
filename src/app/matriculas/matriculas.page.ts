@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatriculasPage implements OnInit {
 
+  curso : string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  carregar() {
+
   }
 
 }
