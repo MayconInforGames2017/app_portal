@@ -23,5 +23,27 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of itens">
+      <ion-item-options side="start">    
+        <ion-item-option (click)="aprovar(item.id)">
+          Aprovar
+        </ion-item-option>
+      </ion-item-options>
 
+      <ion-item>
+        <ion-label>{{ item.nome }}</ion-label>
+      </ion-item>
+      <ion-item-options side="end">    
+        <ion-item-option (click)="concluir(item.id)">
+          Concluir
+        </ion-item-option>
+        <ion-item-option (click)="excluir(item.id)">
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+  
 </ion-content>
